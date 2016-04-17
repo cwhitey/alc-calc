@@ -9,12 +9,13 @@
                  [bidi "2.0.6"]
                  [metosin/ring-http-response "0.6.5"]
                  [ring-middleware-format "0.7.0" :exclusions [ring]]]
-  :plugins [[lein-ring "0.9.7"]]
   :profiles {:dev {:dependencies [[org.clojure/tools.namespace "0.2.11"]]
                    :source-paths ["dev"]}
              :production {}}
-  :ring {:port 4000
-         :handler server/app}
+  :main server/-main
   :uberjar-name "alc-calc.jar"
-  :repl-options {:init-ns server})
+  :repl-options {:init-ns server}
+  :min-lein-version "2.0.0")
+
+
 
