@@ -1,6 +1,5 @@
 (ns server
   (:require [clojure.pprint :refer [pprint]]
-            [ring.adapter.jetty :as jetty]
             [ring.util.http-response :refer [ok content-type header] :as resp]
             [ring.middleware.format :refer [wrap-restful-format]]
             [bidi.ring :as bidi]))
@@ -19,7 +18,3 @@
 (def app (-> routes
              (bidi/make-handler)
              (wrap-restful-format :formats [:json])))
-
-(defn -main [& [port]]
-  (let [port (Integer. (or port 5000))]
-    (jetty/run-jetty app {:port port :join? false})))

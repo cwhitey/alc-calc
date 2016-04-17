@@ -6,7 +6,6 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [http-kit "2.1.19"]
                  [ring/ring-core "1.4.0"]
-                 [ring/ring-jetty-adapter "1.4.0"]
                  [bidi "2.0.6"]
                  [metosin/ring-http-response "0.6.5"]
                  [ring-middleware-format "0.7.0" :exclusions [ring]]]
@@ -15,7 +14,5 @@
                    :source-paths ["dev"]}
              :production {}}
   :ring {:handler server/app}
-  :main server/-main
-  :aot server/-main
   :repl-options {:init-ns server}
   :min-lein-version "2.0.0")
