@@ -1,44 +1,12 @@
-# alc-drinks
+# alc-calc
 
-TODO: Brief description
-
-
-
-## Releases and Dependency Information
-
-* Releases are published to TODO_LINK
-
-* Latest stable release is TODO_LINK
-
-* All released versions TODO_LINK
-
-[Leiningen] dependency information:
-
-    [alc-drinks "0.1.0-SNAPSHOT"]
-
-[Maven] dependency information:
-
-    <dependency>
-      <groupId>alc-drinks</groupId>
-      <artifactId>alc-drinks</artifactId>
-      <version>0.1.0-SNAPSHOT</version>
-    </dependency>
-
-[Leiningen]: http://leiningen.org/
-[Maven]: http://maven.apache.org/
-
+Calculate alcoholic drinks using standard national measurements.
+Also available for use as a service on `/calc`.
 
 
 ## Usage
 
 TODO
-
-
-
-## Change Log
-
-* Version 0.1.0-SNAPSHOT
-
 
 
 ## Copyright and License
